@@ -2,7 +2,6 @@ package com.bricks.orders.web;
 
 import com.bricks.orders.domain.Order;
 import com.bricks.orders.service.OrderService;
-import com.bricks.orders.web.OrderController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +15,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import java.net.URI;
 import java.util.Optional;
 
+import static org.junit.Assert.assertEquals;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -23,7 +23,7 @@ import static org.mockito.Mockito.when;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {OrderService.class, OrderController.class})
-public class OrderControllerUnitTest {
+public class OrderControllerUTest {
 
     @MockBean
     private OrderService orderService;
