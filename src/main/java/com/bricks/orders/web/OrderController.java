@@ -54,7 +54,7 @@ public class OrderController {
                 .orElse(orderNotFound(id));
     }
 
-    @GetMapping(value = "/")
+    @GetMapping
     public ResponseEntity<List<Order>> listOrders() {
         return ResponseEntity.ok(orderService.getOrders());
     }
