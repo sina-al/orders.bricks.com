@@ -22,5 +22,5 @@ get('https://127.0.0.1:800/api/order/{}'.format(ref)).json()
 ```
 **PUT**
 ```python
-ref = put('https://127.0.0.1:8080/api/order/{}'.format(ref), data={'quantity': 20})
+put('https://127.0.0.1:8080/api/order/{}'.format(ref), data={'quantity': 20})
 ```
